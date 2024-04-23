@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitação de filmes</title>
+</head>
+<body>
+    <form method="POST">
+        <label for="nome">Nome do filme: </label>
+        <input type="text" placeholder="Digite o nome do filme" required list="filmes" id="nome"> <br>
+        <datalist id="filmes">
+            <option value="Oppenheimer">Oppenheimer</option>
+            <option value="Homem-Aranha: Através do Aranhaverso">Homem-Aranha: Através do Aranhaverso</option>
+            <option value="Barbie">Barbie</option>
+            <option value="John Wick 4: Baba Yaga">John Wick 4: Baba Yaga</option>
+            <option value="Guardiões da Galáxia Vol. 3">Guardiões da Galáxia Vol. 3</option>
+            <option value="Assassinos da Lua das Flores">Assassinos da Lua das Flores</option>
+            <option value="Missão: Impossível - Acerto de Contas Parte Um">Missão: Impossível - Acerto de Contas Parte Um</option>
+            <option value="Dungeons & Dragons: Honra Entre Rebeldes">Dungeons & Dragons: Honra Entre Rebeldes</option>
+            <option value="Indiana Jones e a Relíquia do Destino">Indiana Jones e a Relíquia do Destino</option>
+            <option value="As Tartarugas Ninja: Caos Mutante">As Tartarugas Ninja: Caos Mutante</option>
+        </datalist>
+
+        <label for="ano">Ano: </label>
+        <input type="date" id="ano"> <br>
+        <input type="reset" value="Limpar dados">
+        <input type="submit" value="Solicitar">
+    </form>
+</body>
+</html>
