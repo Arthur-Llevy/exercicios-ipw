@@ -6,7 +6,7 @@
     <title>Cadastro</title>
 </head>
 <body>
-    <form method="POST">
+    <form method="POST" enctype="application/x-www-form-urlencoded" target="_blank">
         <label for="nome">Nome: </label>
         <input type="text" placeholder="Digite seu nome" required id="nome"> <br>
 
@@ -25,9 +25,8 @@
         <label for="sexo_feminino">Feminino: </label>
         <input type="radio" required id="sexo_feminino" name="sexo"> <br>
 
-        <label for="estado">Estado: </label>
-        <input type="text" required id="estado" list="estados" placeholder="Digite seu estado"> <br>
-        <datalist id="estados">
+        <label for="estados">Estado: </label>
+        <select id="estados">
             <option value="Acre - AC">Acre - AC</option>
             <option value="Alagoas - AL">Alagoas - AL</option>
             <option value="Amapá - AP">Amapá - AP</option>
@@ -55,7 +54,8 @@
             <option value="São Paulo - SP">São Paulo - SP</option>
             <option value="Sergipe - SE">Sergipe - SE</option>
             <option value="Tocantins - TO">Tocantins - TO</option>
-        </datalist>
+        </select>
+        <br>
 
         <input type="reset" value="Limpar dados">
         <input type="submit" value="Enviar">
