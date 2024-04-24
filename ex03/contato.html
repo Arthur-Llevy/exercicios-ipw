@@ -7,21 +7,23 @@
 </head>
 <body>
     <form enctype="application/x-www-form-urlencoded" target="_blank" action="https://www.w3schools.com/action_page.php">
-        <label for="nome_usuario">Nome do usuário:</label>
-        <input type="text" name="nome_usuario" id="nome_usuario" placeholder="Digite o seu nome" required> <br>
+        <fieldset>
+            <legend>Contato</legend>
+            <label for="nome_usuario">Nome do usuário:</label>
+            <input type="text" name="nome_usuario" id="nome_usuario" placeholder="Digite o seu nome" required> <br>
 
-        <label for="email">E-mail:</label>
-        <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required> <br>
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required> <br>
 
-        <label for="assunto">Assunto:</label>
-        <input type="text" name="assunto" id="assunto" placeholder="Digite o assunto" required> <br>
+            <label for="assunto">Assunto:</label>
+            <input type="text" name="assunto" id="assunto" placeholder="Digite o assunto" required> <br>
 
-        <label for="mensagem">Mensagem:</label>
-        <textarea rows="10" cols="60" name="mensagem" placeholder="Digite a mensagem" id="mensagem" required></textarea> <br>
+            <label for="mensagem">Mensagem:</label>
+            <textarea rows="10" cols="60" name="mensagem" placeholder="Digite a mensagem" id="mensagem" required></textarea> <br>
 
-        <input type="reset" value="Limpar dados">
-        <input type="submit" value="Enviar">
-        
+            <input type="reset" value="Limpar dados">
+            <input type="submit" value="Enviar">        
+        </fieldset>
     </form>
 </body>
 </html>

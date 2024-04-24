@@ -7,12 +7,16 @@
 </head>
 <body>
     <form enctype="application/x-www-form-urlencoded" target="_blank" action="https://www.w3schools.com/action_page.php">
-        <label for="nome_usuario">Nome do usuário:</label>
-        <input type="text" name="nome_usuario" id="nome_usuario" placeholder="Digite o seu nome" required> <br>
-        <label for="senha">Senha:</label>
-        <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required> <br>
-        <input type="reset" value="Limpar dados">
-        <input type="submit" value="Entrar">
+        <fieldset>
+            <legend>Login</legend>
+            <label for="nome_usuario">Nome do usuário:</label>
+            <input type="text" name="nome_usuario" id="nome_usuario" placeholder="Digite o seu nome" required> <br>
+            <label for="senha">Senha:</label>
+            <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required> <br>
+            <input type="reset" value="Limpar dados">
+            <input type="submit" value="Entrar">
+        </fieldset>
     </form>
 </body>
 </html>
+
