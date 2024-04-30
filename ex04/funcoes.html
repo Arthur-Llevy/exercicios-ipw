@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags Semânticas</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./index.html" target="_blank">Variáveis</a></li>
+                <li><a href="./funcoes.html" target="_blank">Funções</a></li>
+                <li><a href="./listas.html" target="_blank">Listas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <header>
+                <h1>Funções </h1>
+            </header>
+            <section>
+                <p>
+                    Funções são conjuntos de blocos de códigos que podem serem chamados para serem executados mais de
+                    uma vez sem precisar escrever tudo de novo.
+                </p>
+                <p>
+                    Por exemplo, se você precisa de um código que peça a idade do usuário e faça um cálculo, você pode
+                    escrever isso em forma de função, para não precisar escrever o cálculo do zero todas as vezes que
+                    for pedir a idade do usuário. Veja abaixo o exemplo em <i>Python</i>.
+                </p>
+                <code>
+                    <pre>
+                        def idadeMultiplicada():
+                            idade = input("Digite sua idade: ")
+                            return idade * 10
+                    </pre>
+                </code>
+                <code>
+                    <pre>   
+                        idadeMultiplicada()
+                    </pre>
+                </code>
+                <p>
+                </p>
+                É criada a função <code>idadeMultiplicada</code> em que pede a idade do usuário e retorna ela
+                multiplicada por 10. Se fosse necessário pedir a idade do usuário diversas vezes e fazer esse cálculo
+                com ela, usando funções, não seria preciso fazer todas as linhas de código novamente, apenas chamar a
+                função <code>idadeMultiplicada</code> novamente.
+                </p>
+            </section>
+        </article>
+        <article>
+            <header>
+                <h1>Parâmetros</h1>
+            </header>
+            <section>
+                <p>Funções podem ter parâmetros, para poderem ficar mais dinâmicas. Parâmetros são como "entradas" para
+                    as funções. Veja abaixo</p>
+                </p>
+                <code>
+                    <pre>
+                        def soma(x, y):
+                            return x + y
+                    </pre>
+                </code>
+                <p>
+                    Na função <code>soma(x, y)</code> ela recebe dois parâmetros: <i>x</i> e <i>y</i> e retorna a soma
+                    deles. Dessa forma, é possível realizar a soma de números diferentes em diferentes chamadas da
+                    função
+                </p>
+                <p>
+                    Para poder chamar uma função e passar parâmetros basta entre parênteses digitar os valores
+                    respectivos. No caso da função <code>soma(x, y)</code>, ao chamar ela, é necessário informar qual
+                    será o valor de x e y dentro dos parênteses, como mostrado acima
+                </p>
+            </section>
+        </article>
+        <aside>
+            <header>
+                <h2>Saiba mais em</h2>
+                <a href="https://wiki.sj.ifsc.edu.br/index.php/Fun%C3%A7%C3%B5es_-_Programa%C3%A7%C3%A3o_1_-_Engenharia"
+                    target="_blank">
+                    Funções - Programação 1 - Engenharia
+                </a>
+            </header>
+        </aside>
+    </main>
+    <footer>
+        <p>Contate-me</p>
+        <ul>
+            <li><a href="https://github.com/Arthur-Llevy/exercicios-ipw" target="_blank">GitHub</a></li>
+            <li><a href="mailto:arthur123lbv@gmail.com" target="_blank">E-mail</a></li>
+            <li><a href="https://www.linkedin.com/in/arthur-levy-bb0aa32a6/" target="_blank">LinkedIn</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>
