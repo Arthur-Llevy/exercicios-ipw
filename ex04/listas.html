@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tags Semânticas</title>
+    <title>Listas</title>
 </head>
 
 <body>
@@ -25,66 +25,46 @@
             </header>
             <section>
                 <p>
-                   São
-                </p>
-                <p>
-                    Por exemplo, se você precisa de um código que peça a idade do usuário e faça um cálculo, você pode
-                    escrever isso em forma de função, para não precisar escrever o cálculo do zero todas as vezes que
-                    for pedir a idade do usuário. Veja abaixo o exemplo em <i>Python</i>.
+                    Lista é um tipo de dado que armazena literalmente uma lista, por exemplo, uma lista de números,
+                    entre outros. Elas são úteis quando você precisa armazenar muitas informações, lista de nomes por
+                    exemplo. Veja abaixo o exemplo em <i>Python</i>
                 </p>
                 <code>
-                    <pre>
-                        def idadeMultiplicada():
-                            idade = input("Digite sua idade: ")
-                            return idade * 10
-                    </pre>
-                </code>
-                <code>
-                    <pre>   
-                        idadeMultiplicada()
-                    </pre>
+                    nomes = ["Arthur", "Maria", "José"]
                 </code>
                 <p>
-                </p>
-                É criada a função <code>idadeMultiplicada</code> em que pede a idade do usuário e retorna ela
-                multiplicada por 10. Se fosse necessário pedir a idade do usuário diversas vezes e fazer esse cálculo
-                com ela, usando funções, não seria preciso fazer todas as linhas de código novamente, apenas chamar a
-                função <code>idadeMultiplicada</code> novamente.
+                    De forma simples, criamos uma lista de nomes.
                 </p>
             </section>
         </article>
         <article>
             <header>
-                <h1>Parâmetros</h1>
+                <h1>Acessando seus valores</h1>
             </header>
             <section>
-                <p>Funções podem ter parâmetros, para poderem ficar mais dinâmicas. Parâmetros são como "entradas" para
-                    as funções. Veja abaixo</p>
+                <p>
+                    Para poder acessar um valor da lista, basta indicar em qual <i>indice</i> o item que você quer está.
+                    Lembrando que em maioria das linguagens de programação, o primeiro índice é zero. Veja a representação abaixo:
                 </p>
+                <figure>
+                    <img width="600" src="./imagens/listas.jpeg" alt="imagem sobre índices de listas">
+                    <figcaption>Representação do índice de listas</figcaption>
+                </figure>
+                <p>Veja como acessar o primeiro nome da lista <i>nomes</i> criada anteriormente</p>
                 <code>
-                    <pre>
-                        def soma(x, y):
-                            return x + y
-                    </pre>
+                    nomes[0]
                 </code>
                 <p>
-                    Na função <code>soma(x, y)</code> ela recebe dois parâmetros: <i>x</i> e <i>y</i> e retorna a soma
-                    deles. Dessa forma, é possível realizar a soma de números diferentes em diferentes chamadas da
-                    função
-                </p>
-                <p>
-                    Para poder chamar uma função e passar parâmetros basta entre parênteses digitar os valores
-                    respectivos. No caso da função <code>soma(x, y)</code>, ao chamar ela, é necessário informar qual
-                    será o valor de x e y dentro dos parênteses, como mostrado acima
+                    O código acima irá exibir o nome "Arthur", pois este texto ocupa a posição 0
                 </p>
             </section>
         </article>
         <aside>
             <header>
                 <h2>Saiba mais em</h2>
-                <a href="https://wiki.sj.ifsc.edu.br/index.php/Fun%C3%A7%C3%B5es_-_Programa%C3%A7%C3%A3o_1_-_Engenharia"
+                <a href="https://www.treinaweb.com.br/blog/o-que-e-e-como-funciona-a-estrutura-de-dados-lista"
                     target="_blank">
-                    Funções - Programação 1 - Engenharia
+                    O que é e como funciona a Estrutura de Dados Lista
                 </a>
             </header>
         </aside>
