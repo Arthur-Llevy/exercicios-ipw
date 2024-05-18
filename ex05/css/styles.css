@@ -7,6 +7,10 @@
 	font-family: "Nunito Sans", sans-serif;
 }
 
+body {
+    background: linear-gradient(0deg, #e7e7e7, white);
+}
+
 .link-voltar {
     background: transparent;
     padding: 10px;
@@ -36,6 +40,14 @@ main {
     grid-template-areas: 
     	"sobreMim sobreMim sobreMim"
     	"foto video musica";
+}
+
+img, video, audio {
+    transition: .2s;
+}
+
+:is(img, video, audio):hover {
+    transform: translate(-2px, -2px);
 }
 
 img {
