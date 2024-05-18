@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Nunito Sans", sans-serif;
+}
+
+.link-voltar {
+    background: transparent;
+    padding: 10px;
+    color: #000;
+    font-weight: bold;
+    border: 2px solid #000;
+    transition: .2s;
+}
+
+.link-voltar:hover {
+	transition: .2s;
+	background: #000;
+    padding: 10px;
+    color: #fff;
+    font-weight: bold;
+}
+
+header {
+    margin: 30px 10px;
+}
+
+main {
+    margin: 0 10px;
+    gap: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    	"sobreMim sobreMim sobreMim"
+    	"foto video musica";
+}
+
+img {
+    border-radius: 100%;
+    border: 2px solid #adadad;
+}
+
+section {
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sobre-mim {
+    grid-area: sobreMim;
+    text-align: center;
+}	
+
+.citacao {
+    color: #4a4a4a;
+    margin: 30px 0 0 0;
+}
+
+.video {
+    grid-area: video;
+}	
+
+.foto {
+    grid-area: foto;
+}	
+
+.musica {
+    grid-area: musica;
+}	
